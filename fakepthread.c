@@ -110,3 +110,33 @@ int pthread_detach(pthread_t thread) {
 int pthread_once(pthread_once_t *once_control, void (*init_routine)(void)) {
 	STUB();
 }
+
+// rwlock
+
+int pthread_rwlock_init(pthread_rwlock_t *rwlock, const pthread_rwlockattr_t *attr) {
+	return 0;
+}
+
+int pthread_rwlock_destroy(pthread_rwlock_t *rwlock) {
+	return 0;
+}
+
+int pthread_rwlock_rdlock(pthread_rwlock_t *rwlock) {
+	return 0;
+}
+
+int pthread_rwlock_tryrdlock(pthread_rwlock_t *rwlock) {
+	return 0;
+}
+
+int pthread_rwlock_wrlock(pthread_rwlock_t *rwlock) {
+	return 0;
+}
+
+int pthread_rwlock_trywrlock(pthread_rwlock_t *rwlock) {
+	return 0;
+}
+
+int pthread_rwlock_unlock(pthread_rwlock_t *rwlock) {
+	return 0;
+}
