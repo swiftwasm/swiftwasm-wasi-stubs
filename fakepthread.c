@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
+#include <semaphore.h>
 
 #define STUB() do {fprintf(stderr, "FakePthread: unsupported %s\n", __func__);abort();}while(0)
 
@@ -139,4 +140,10 @@ int pthread_rwlock_trywrlock(pthread_rwlock_t *rwlock) {
 
 int pthread_rwlock_unlock(pthread_rwlock_t *rwlock) {
 	return 0;
+}
+
+// named semaphores
+
+sem_t *sem_open(const char *name, int oflag, ...) {
+	STUB();
 }
